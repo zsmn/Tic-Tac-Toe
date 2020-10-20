@@ -9,14 +9,14 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 ### Requisições para Criar/Consultar/Deletar/Entrar em uma Sala.
 
 ### Requisição para obter as 10 maiores pontuações.
-* Linha de requisição na mensagem HTTP: ```GET /highscores```
-* Mensagem de requisição:
+##### Linha de requisição na mensagem HTTP: ```GET /highscores```
+##### Mensagem de requisição:
 ```json
 {
-Token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
+token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
 }
 ```
-* Mensagem de resposta:
+##### Mensagem de resposta:
 ```json
 [
   {
@@ -48,5 +48,6 @@ Token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
   },
 ]
 ```
-
+##### Exceções: 
+  * Quando o token fornecido não possui autoridade para solicitar a tabela de highscores.
 ### Requisições para realização de jogadas em uma Sala por um Usuário.
