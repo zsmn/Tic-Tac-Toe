@@ -4,7 +4,7 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 # Login/Logout
 
 ## Login 
-* Para que um usuário possa realizar o login, deve ser feito uma requisição do tipo `POST`, enviando seu login e a sua password. O retorno deverá ser apenas um código de status, no qual 1 indica que ocorreu tudo bem, enquanto 0 indica que houve um erro.
+* Para que um usuário possa realizar o login, deve ser feito uma requisição do tipo `POST`, enviando seu login e a sua password. O retorno deverá ser apenas um código de status, no qual 1 indica que ocorreu tudo bem, enquanto 0 indica que houve um erro e vai retornar também um token correspondente ao usuário.
 
 **Request:** `POST /userLogin`
 
@@ -19,7 +19,8 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 **Response:**
 ```javascript
 {
-    status: 1
+    status: 1,
+    token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
 }
 ```
 
@@ -28,21 +29,14 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 * Se o usuário já estiver logado no sistema
 
 ## Logout
-* Para que um usuário possa realizar o logout, deve ser feito uma requisição do tipo `GET`, enviando apenas o seu token. O retorno deverá ser apenas um código de status, no qual 1 indica que ocorreu tudo bem, enquanto 0 indica que houve um erro.
+* Para que um usuário possa realizar o logout, deve ser feito uma requisição do tipo `GET`, enviando apenas o seu token. Não possui mensagem de retorno.
 
-**Request:** `GET /userLogout`
+**Request:** `DELETE /userLogout`
 
 **Body:**
 ```javascript
 {
     token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
-}
-```
-
-**Response:**
-```javascript
-{
-    status: 1
 }
 ```
 
