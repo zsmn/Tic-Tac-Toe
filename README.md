@@ -23,8 +23,8 @@ Token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
     rank: 1,
     id: 23,
     user: {
-      username: "vivi123",
-      score/wins: "43",
+      nickname: "vivi123",
+      score-wins: 43,
       id: 2,
     }
   },
@@ -32,8 +32,8 @@ Token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
     rank: 2,
     id: 42,
     user: {
-      username: "starlord000",
-      score-wins: "22",
+      nickname: "starlord000",
+      score-wins: 22,
       id: 13
     }
   },
@@ -41,8 +41,8 @@ Token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
     rank: 3,
     id: 1,
     user: {
-      username: "FRZ Drako",
-      score-wins: "17",
+      nickname: "FRZ Drako",
+      score-wins: 17,
       id: 17
     }
   },
