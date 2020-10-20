@@ -12,7 +12,7 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 ```javascript
 {
     user: "incarnati0n",
-    password: "gonnaClapFaker"
+    pass: "gonnaClapFaker"
 }
 ```
 
@@ -46,7 +46,7 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 # Usuários
 
 ## Cadastro
-Para o cadastro de um usuário, deve ser feito uma requisição do tipo `POST`, enviando dados sobre o usuário. O retorno deverá ser um `id` válido atrelado ao usuário novo criado.
+Para o cadastro de um usuário, deve ser feito uma requisição do tipo `POST`, enviando dados sobre o usuário.
 
 **Request:** `POST /user`
 
@@ -57,13 +57,6 @@ Para o cadastro de um usuário, deve ser feito uma requisição do tipo `POST`, 
     pass: "senha",
     nickname: "ticmastertoe",
     mail: "usuario@abc.com"
-}
-```
-
-**Response:**
-```javascript
-{
-    id: 3
 }
 ```
 
