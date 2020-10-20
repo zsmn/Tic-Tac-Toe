@@ -112,8 +112,9 @@ Para executar uma jogada, deve ser feito uma requisição do tipo `POST`, onde o
 * Se a posição requisitada já está marcada
 * Se o token não for válido para essa requisição
 
+# Highscores
 
-## Pontuação
+## Obtendo ranking com os 10 melhores jogadores
 Para obter o ranking com as 10 maiores pontuações (vitórias) e seus respectivos detentores, deve ser feita uma requisição do tipo `GET`, enviando apenas o token do usuário que está realizando a requisição. O retorno deverá ser uma list de tamanho 10 na qual cada elemento é uma das posições com informações sobre o jogador, sua pontuação, seu ranking e seu id.
 
 **Request:** `GET /highscores`
