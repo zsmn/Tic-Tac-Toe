@@ -1,23 +1,21 @@
 # Tic-Tac-Toe
 Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+Express.
 
-## Projeto das requisições API
-### Requisições de Cadastro/Edição/Remoção de Usuários.
 
-### Requisições de Login/Logout de Usuários.
+## Pontuação
+Para obter o ranking com as 10 maiores pontuações (vitórias) e seus respectivos detentores, deve ser feita uma requisição do tipo `GET`, enviando apenas o token do usuário que está realizando a requisição. O retorno deverá ser uma list de tamanho 10 na qual cada elemento é uma das posições com informações sobre o jogador, sua pontuação, seu ranking e seu id.
 
-### Requisições para Criar/Consultar/Deletar/Entrar em uma Sala.
+**Request:** `GET /highscores`
 
-### Requisição para obter as 10 maiores pontuações.
-##### Linha de requisição na mensagem HTTP: ```GET /highscores```
-##### Mensagem de requisição:
-```json
+**Body:**
+```javacript
 {
 token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
 }
 ```
-##### Mensagem de resposta:
-```json
+
+**Response:**
+```javascript
 [
   {
     rank: 1,
@@ -48,6 +46,6 @@ token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
   },
 ]
 ```
-##### Exceções: 
-  * Quando o token fornecido não possui autoridade para solicitar a tabela de highscores.
-### Requisições para realização de jogadas em uma Sala por um Usuário.
+
+**Exceptions:**
+  * Se o token fornecido não possuir autoridade para solicitar a tabela de highscores
