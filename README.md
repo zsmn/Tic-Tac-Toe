@@ -91,6 +91,28 @@ Para entrar em uma sala, deve ser feito uma requisição do tipo `PUT`, onde o `
 * Se ela já estiver cheia (`challenger-id` da sala estiver com um valor de `id` válido)
 * Se o usuário for o próprio dono da sala ele não pode entrar como desafiante
 
+## Jogada
+
+Para executar uma jogada, deve ser feito uma requisição do tipo `POST`, onde o `room-id` é especificado no request.
+
+**Request:** `POST /room/{room-id}`
+
+**Body:**
+```javascript
+{
+    token: "UfvL8unRP2YQLv3E8CbJriBWVQlkYMtu",
+    row: 1,
+    column: 2
+}
+```
+
+**Exceptions:**
+* Se não for a vez de quem requisitou a jogada
+* Se a linha ou coluna forem inválidas
+* Se a posição requisitada já está marcada
+* Se o token não for válido para essa requisição
+
+
 ## Pontuação
 Para obter o ranking com as 10 maiores pontuações (vitórias) e seus respectivos detentores, deve ser feita uma requisição do tipo `GET`, enviando apenas o token do usuário que está realizando a requisição. O retorno deverá ser uma list de tamanho 10 na qual cada elemento é uma das posições com informações sobre o jogador, sua pontuação, seu ranking e seu id.
 
