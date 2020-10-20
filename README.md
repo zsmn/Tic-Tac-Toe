@@ -3,7 +3,7 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 
 # Usuários
 
-### Cadastro
+## Cadastro
 Para o cadastro de um usuário, deve ser feito uma requisição do tipo `POST`, enviando dados sobre o usuário. O retorno deverá ser um `id` válido atrelado ao usuário novo criado.
 
 **Request:** `POST /user`
@@ -32,7 +32,7 @@ Para o cadastro de um usuário, deve ser feito uma requisição do tipo `POST`, 
     * Nickname já usado
     * E-mail já utilizado
 
-### Remoção
+## Remoção
 Para a remoção de um usuaŕio específico, optamos pela requisição `DELETE` já que ela permite deletar recursos do servidor. Na requisição devemos especificar o `id` do usuário a ser deletado.
 Como essa operação é destrutiva, enviamos um token no corpo da requisição que será verificado pelo servidor antes de efetuar, de fato, a remoção do usuário.
 
@@ -49,7 +49,7 @@ Como essa operação é destrutiva, enviamos um token no corpo da requisição q
 * Quando o token fornecido não possui autoridade para fazer a remoção.
 * Quando o `id` inserido não existe no sistema
 
-### Edição
+## Edição
 Para a edição de usuários, optamos pela requisição `PUT` já que ela permite alterar recursos do servidor. Analogamente à remoção de usuários, também especificamos na requisição o `id` do usuário a ser alterado. No corpo devemos ter um token para garantir autenticidade e especificar os campos a serem alterados, juntamente com os novos valores.
 
 **Request:** `PUT /user/{id}`
@@ -66,6 +66,7 @@ Para a edição de usuários, optamos pela requisição `PUT` já que ela permit
 * Quando o token fornecido não possui autoridade para fazer a edição.
 * Quando o `id` inserido não existe no sistema
 * Quando os campos inseridos não existirem ou possuirem valores invalidos ou já usados por outro usuário
+
 # Rooms
 
 ## Cadastro
