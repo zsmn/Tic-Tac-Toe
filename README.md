@@ -19,7 +19,6 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 **Response:**
 ```javascript
 {
-    status: 1,
     token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
 }
 ```
@@ -41,7 +40,6 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 ```
 
 **Exceptions:**
-* Se o token em questão é de um usuário que ainda nem fez o login no sistema
 * Se o token em questão não é de um usuário válido
 
 
