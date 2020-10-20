@@ -49,7 +49,7 @@ Para a consulta de uma sala, deve ser feito uma requisição do tipo `GET`, onde
                    [' ', ' ', ' ']],
     owner-id: 5,
     challenger-id: 3,
-    turn: 'X'
+    turn: 'O'
 }
 ```
 
