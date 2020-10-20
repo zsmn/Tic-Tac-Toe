@@ -41,7 +41,7 @@ Como essa operação é destrutiva, enviamos um token no corpo da requisição q
 **Body:**
 ```javascript
 {
-    token: saw93USeczog3CDmdOv6K30cMtLWFxjz
+    token: "saw93USeczog3CDmdOv6K30cMtLWFxjz"
 }
 ```
 
@@ -57,7 +57,7 @@ Para a edição de usuários, optamos pela requisição `PUT` já que ela permit
 **Body:**
 ```javascript
 {
-    token: saw93USeczog3CDmdOv6K30cMtLWFxjz,
+    token: "saw93USeczog3CDmdOv6K30cMtLWFxjz",
     nickname: "ticmastertac"
 }
 ```
