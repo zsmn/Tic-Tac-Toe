@@ -10,7 +10,7 @@ Para obter o ranking com as 10 maiores pontuações (vitórias) e seus respectiv
 **Body:**
 ```javacript
 {
-token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
+    token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
 }
 ```
 
