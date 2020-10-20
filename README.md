@@ -11,7 +11,7 @@ Para o cadastro de uma sala, deve ser feito uma requisição do tipo `POST`, env
 **Body:**
 ```javascript
 {
-    token: vjDaryJkR7fLRqff4SsmdidrFRrIBh1h,
+    token: "vjDaryJkR7fLRqff4SsmdidrFRrIBh1h",
     room-name: "challenge"
 }
 ```
@@ -36,7 +36,7 @@ Para a consulta de uma sala, deve ser feito uma requisição do tipo `GET`, onde
 **Body:**
 ```javascript
 {
-    token: vjDaryJkR7fLRqff4SsmdidrFRrIBh1h
+    token: "vjDaryJkR7fLRqff4SsmdidrFRrIBh1h"
 }
 ```
 
@@ -65,7 +65,7 @@ Para deletar uma sala, deve ser feito uma requisição do tipo `DELETE`, onde o 
 **Body:**
 ```javascript
 {
-    token: vjDaryJkR7fLRqff4SsmdidrFRrIBh1h
+    token: "vjDaryJkR7fLRqff4SsmdidrFRrIBh1h"
 }
 ```
 
@@ -81,7 +81,7 @@ Para entrar em uma sala, deve ser feito uma requisição do tipo `PUT`, onde o `
 **Body:**
 ```javascript
 {
-    token: vjDaryJkR7fLRqff4SsmdidrFRrIBh1h
+    token: "vjDaryJkR7fLRqff4SsmdidrFRrIBh1h"
 }
 ```
 
