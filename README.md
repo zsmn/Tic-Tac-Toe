@@ -129,7 +129,7 @@ Para a edição de usuários, optamos pela requisição `PUT` já que ela permit
 # Rooms
 
 ## Cadastro
-Para o cadastro de uma sala, deve ser feito uma requisição do tipo `POST`, enviando dados sobre a sala. O retorno deverá ser um `room-id` válido que será atrelado a essa sala.
+Para o cadastro de uma sala, deve ser feito uma requisição do tipo `POST`, enviando dados sobre a sala.
 
 **Request:** `POST /room`
 
@@ -138,13 +138,6 @@ Para o cadastro de uma sala, deve ser feito uma requisição do tipo `POST`, env
 {
     token: "vjDaryJkR7fLRqff4SsmdidrFRrIBh1h",
     room-name: "challenge"
-}
-```
-
-**Response:**
-```javascript
-{
-    room-id: 6
 }
 ```
 
