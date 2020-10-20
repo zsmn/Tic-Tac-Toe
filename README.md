@@ -11,13 +11,13 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 ### Requisição para obter as 10 maiores pontuações.
 * Linha de requisição na mensagem HTTP: ```GET /highscores```
 * Mensagem de requisição:
-```
+```json
 {
 Token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
 }
 ```
 * Mensagem de resposta:
-```
+```json
 [
   {
     rank: 1,
