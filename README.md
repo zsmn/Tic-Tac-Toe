@@ -49,6 +49,30 @@ Como essa operação é destrutiva, enviamos um token no corpo da requisição q
 * Quando o token fornecido não possui autoridade para fazer a remoção.
 * Quando o `id` inserido não existe no sistema
 
+## Consulta
+Para a consulta de usuários, optamos pela requisição `GET` já que ela permite consultar recursos do servidor. Analogamente à remoção de usuários, também especificamos na requisição o `id` do usuário a ser alterado. No corpo devemos ter um token para garantir autenticidade.
+
+**Request:** `GET /user/{id}`
+
+**Body:**
+```javascript
+{
+    token: "saw93USeczog3CDmdOv6K30cMtLWFxjz"
+}
+```
+
+**Response:**
+```javascript
+{
+    nickname: "Vitrugo",
+    score-wins: 100
+}
+```
+
+**Exceptions:**
+* Quando o token fornecido não possui autoridade para fazer a edição.
+* Quando o `id` inserido não existe no sistema
+
 ## Edição
 Para a edição de usuários, optamos pela requisição `PUT` já que ela permite alterar recursos do servidor. Analogamente à remoção de usuários, também especificamos na requisição o `id` do usuário a ser alterado. No corpo devemos ter um token para garantir autenticidade e especificar os campos a serem alterados, juntamente com os novos valores.
 
