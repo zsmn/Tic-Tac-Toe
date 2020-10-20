@@ -232,8 +232,8 @@ Para executar uma jogada, deve ser feito uma requisição do tipo `POST`, onde o
 
 # Highscores
 
-## Obtendo ranking com os 10 melhores jogadores
-Para obter o ranking com as 10 maiores pontuações (vitórias) e seus respectivos detentores, deve ser feita uma requisição do tipo `GET`, enviando apenas o token do usuário que está realizando a requisição. O retorno deverá ser uma list de tamanho 10 na qual cada elemento é uma das posições com informações sobre o jogador, sua pontuação, seu ranking e seu id.
+## Obtendo ranking com até 10 maiores pontuações
+Para obter o ranking com até 10 maiores pontuações (vitórias) e seus respectivos detentores, deve ser feita uma requisição do tipo `GET`, enviando apenas o token do usuário que está realizando a requisição. O retorno deverá ser uma list com no máximo tamanho 10, na qual cada elemento é uma das posições com informações sobre o jogador, sua pontuação e seu ranking.
 
 **Request:** `GET /highscores`
 
@@ -249,29 +249,26 @@ Para obter o ranking com as 10 maiores pontuações (vitórias) e seus respectiv
 [
   {
     rank: 1,
-    id: 23,
+    highscore-id: 23,
     user: {
       nickname: "vivi123",
       score-wins: 43,
-      id: 2,
     }
   },
   {
     rank: 2,
-    id: 42,
+    highscore-id: 42,
     user: {
       nickname: "starlord000",
       score-wins: 22,
-      id: 13
     }
   },
   {
     rank: 3,
-    id: 1,
+    highscore-id: 1,
     user: {
       nickname: "FRZ Drako",
       score-wins: 17,
-      id: 17
     }
   },
 ]
