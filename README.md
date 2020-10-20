@@ -28,7 +28,7 @@ Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+
 * Se o usuário já estiver logado no sistema
 
 ## Logout
-* Para que um usuário possa realizar o logout, deve ser feito uma requisição do tipo `GET`, enviando apenas o seu token. Não possui mensagem de retorno.
+* Para que um usuário possa realizar o logout, deve ser feito uma requisição do tipo `DELETE`, enviando apenas o seu token. Não possui mensagem de retorno.
 
 **Request:** `DELETE /userLogout`
 
