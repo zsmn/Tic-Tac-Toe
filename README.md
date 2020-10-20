@@ -1,6 +1,56 @@
 # Tic-Tac-Toe
 Projeto de uma API RESTful para um Jogo da velha que será implementado em Node+Express.
 
+# Login/Logout
+
+## Login 
+* Para que um usuário possa realizar o login, deve ser feito uma requisição do tipo `POST`, enviando seu login e a sua password. O retorno deverá ser apenas um código de status, no qual 1 indica que ocorreu tudo bem, enquanto 0 indica que houve um erro.
+
+**Request:** `POST /userLogin`
+
+**Body:**
+```javascript
+{
+    user: "incarnati0n",
+    password: "gonnaClapFaker"
+}
+```
+
+**Response:**
+```javascript
+{
+    status: 1
+}
+```
+
+**Exceptions:**
+* Se o usuário que está tentando realizar o login não foi cadastrado previamente
+* Se o usuário já estiver logado no sistema
+
+## Logout
+* Para que um usuário possa realizar o logout, deve ser feito uma requisição do tipo `GET`, enviando apenas o seu token. O retorno deverá ser apenas um código de status, no qual 1 indica que ocorreu tudo bem, enquanto 0 indica que houve um erro.
+
+**Request:** `GET /userLogout`
+
+**Body:**
+```javascript
+{
+    token: "rR0aOq1Q7M4GcXwzYi6FHthUPVJoRtPA"
+}
+```
+
+**Response:**
+```javascript
+{
+    status: 1
+}
+```
+
+**Exceptions:**
+* Se o token em questão é de um usuário que ainda nem fez o login no sistema
+* Se o token em questão não é de um usuário válido
+
+
 # Usuários
 
 ## Cadastro
